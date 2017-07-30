@@ -1,0 +1,61 @@
+* { }
+h1 { font-family: 'Sansita One', cursive; text-align:center; }
+h2 {text-align:center; }
+p { font-family: Arial, Helvetica, sans-serif;     
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px; }
+a { color: inherit; text-decoration: none; } 
+
+body {
+  background: url("bg.png");
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.card {
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.card .card-content {
+  margin: auto;
+  text-align: center;
+}
+
+.holder {
+  padding: 30px;
+  background: white;
+  border-radius: 5px;
+  max-width: 80%;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.holder .holder-content {
+  margin: auto;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+body {
+   align-self: flex-start;
+}
+
+.card {
+  padding: 10px;
+  width: 100%;
+}
